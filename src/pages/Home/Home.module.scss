@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.row-margin {
+  margin-bottom: 81px;
+  padding-bottom: 81px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+#highlights {
+	margin-top: 64px;
+	padding-bottom: 120px;
+}
+
+.carousel {
+	height: 400px;
+	background: $darkGray;
+
+	.carousel-item {
+	  padding-top: 347px;
+	}
+
+	.carousel-caption {
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#highlights > *:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}

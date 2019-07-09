@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.highight {
+	text-align: center;
+
+	&.animate-true {
+		opacity: 0;
+		transform: translateY(-10px);
+		animation: slideDownFadeIn 1 0.7s forwards;
+	}
+	
+	.hightlight-icon {
+		display: block;
+	}
+	
+	.placeholder-icon {
+		border-radius: 50%;
+		background: $darkGray;
+		height: 140px;
+		width: 140px;
+		display: block;
+		margin: 0 auto 10px;
+	}
+
+	p {
+	  padding: 0 15px;
+	}
+}
+
+@keyframes slideDownFadeIn {
+	from { opacity: 0; transform: translateY(-10px); }
+	to { opacity: 1; transform: translateY(0px); }
+}

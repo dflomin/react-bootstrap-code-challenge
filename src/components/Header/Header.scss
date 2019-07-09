@@ -1,0 +1,27 @@
+.navbar-brand a {
+	color: white;
+	padding: .5rem 0;
+}
+
+.navbar {
+	padding: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-collapse input + button {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  border-top-left-radius: 0;
+	  border-bottom-left-radius: 0;
+	}
+
+	.navbar-collapse .form-inline {
+	  position: relative;
+	}
+
+	.navbar-collapse .form-inline input {
+	  padding-right: 85px;
+	  margin-bottom: 15px;
+	}
+}

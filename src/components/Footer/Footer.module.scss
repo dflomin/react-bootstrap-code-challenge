@@ -1,0 +1,39 @@
+.footer {
+	padding-bottom: 120px;
+}
+
+.back-to-top {
+	float: right;
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+
+	&:hover {
+	  color: #0056b3;
+	  text-decoration: underline;
+	}
+}
+
+.links {
+	display: inline-block;
+
+	a::before {
+		content: "\2022";
+		padding: 0 5px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer span {
+		float: none;
+		width: calc(100% - 90px);
+		display: inline-block;
+		vertical-align: top;
+		
+		&.back-to-top {
+			width: 90px;
+		  white-space: pre;
+		}
+	}
+}
